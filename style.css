@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #fff;
+    --bg-color: rgb(240, 191, 14);
+    --main-color: #000;
+    --big-font:3rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+*::selection{
+    background: var(--bg-color);
+    color: #fff;
+}
+
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 170px;
+   background-color: rgba(0, 0, 0, 0.16);
+   position: absolute;
+    
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 70px 10%;
+}
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:1rem;
+    align-items: center;
+}
+.home-img img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+
+}
+.home-text h1{
+    font-size: var(--big-font);
+}
+.home-text p{
+    margin: 0.5rem 0.2rem;
+    font-size: var(--p-font); 
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0.5rem;
+    background: #0078d7;
+    margin-top: 10px;
+}
+#btn2{
+    margin-left: 8px;
+}
+.btn:hover{
+    transform: scale(1) translate(4px);
+    transition: .2s;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    background: #fff;
+}
+.about-img img{
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    color: #000;
+}
+.about-text p{
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+    color: #000;
+
+}
+.btn3{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0.5rem;
+    background: var(--bg-color);
+}
+
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 600;
+    font-size: 40px;
+}
+.heading p{
+    font-size: var(--p-font);
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+
+}
+
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.box-img{
+    width: 240px;
+    height: 240px;
+    border: 5px solid #fff;
+
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.box h2{
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 5px;
+}
+.box p{
+    color: #fff;
+    margin: 4px 0 10px;
+}
+.btn4{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0.5rem;
+    background: #0078d7;
+    margin-top: 10px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+
+}
+
+.box span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.line{
+    text-decoration: line-through;
+}
+
+.care{
+    background: #fff;
+}
+.careheading{
+    text-align: center;
+    color: #000;
+}
+.careheading span{
+    font-weight: 600;
+    font-size: 40px;
+}
+.careheading p{
+    font-size: var(--p-font);
+}
+
+.teambox{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.teambox h2{
+    font-size: 1.3rem;
+    color: #000;
+    padding: 3px;
+}
+.teambox p{
+    color: #000;
+    margin: 2px 0 5px;
+
+}
+
+.mid{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(./images/dogcare.avif);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.mid-box{
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0.5rem;
+
+}
+
+.mid-logo{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #fff;
+
+}
+.mid-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#contact{
+    background: rgb(54, 51, 51);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer{
+    padding: 10px 0;
+}
+.col{
+    width:25%;
+}
+.col h4{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+.col ul li a{
+    color: #fff;
+    padding-top: 5px;
+}
+
+.col .social{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.col .social a{
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    color:#000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1560px){
+    header{padding: 15px 40px;
+    }
+}
+
+@media (max-width:1140px) {
+    section{
+        padding: 50px 8%;
+    }
+    #menu-icon{
+        display: initial;
+        color: var(--text-color);
+    }
+    header .navbar{
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #2b2640;
+        transition: .3s;
+    }
+    header .navbar.active{
+        top: 70px;
+
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+}
+
+@media (max-width:720px) {
+    header{
+        padding: 10px 16px;
+    }
+    .home{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+   
+    .about{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .about-img{
+        order: 2;
+    }
+
+    section{
+        padding: 100px 7%;
+    }
+}
+
+@media (max-width:575px){
+    .col{
+        width: 100%;
+    }
+    .col h4{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:320px){
+    .col{
+        width: 100%;
+    }
+ 
+  section{
+    padding: 110px 2%;
+  }
+}
